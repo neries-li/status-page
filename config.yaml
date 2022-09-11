@@ -21,7 +21,7 @@ monitors:
     url: 'http://segator.nodo.ovh:32400/' # URL to fetch
     method: GET # default=GET
     expectStatus: 401 # operational status, default=200
-    followRedirect: true # should fetch follow redirects, default=false
+    followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
   - id: bcn-stats # unique identifier
     name: Plex BCN Stats
@@ -37,12 +37,12 @@ monitors:
     url: 'http://jvdivx.synology.me:32400/' # URL to fetch
     method: GET # default=GET
     expectStatus: 401 # operational status, default=200
-    followRedirect: true # should fetch follow redirects, default=false
+    followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
   - id: mad-stats # unique identifier
     name: Plex Mad Stats
     description: 'Plex MAD Stats' # default=empty
-    url: 'http://stats-mad.neries.li/auth/login' # URL to fetch
+    url: 'https://stats-mad.neries.li/auth/login' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
