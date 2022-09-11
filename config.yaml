@@ -18,7 +18,7 @@ monitors:
   - id: bcn-plex # unique identifier
     name: Plex BCN
     description: 'Plex BCN' # default=empty
-    url: 'http://segator.nodo.ovh:32400/' # URL to fetch
+    url: 'http://plex-bcn.neries.li/' # URL to fetch
     method: GET # default=GET
     expectStatus: 401 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
@@ -34,7 +34,7 @@ monitors:
   - id: bcn-plex # unique identifier
     name: Plex MAD
     description: 'Plex MAD' # default=empty
-    url: 'http://jvdivx.synology.me:32400/' # URL to fetch
+    url: 'http://plex-mad.neries.li/' # URL to fetch
     method: GET # default=GET
     expectStatus: 401 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
