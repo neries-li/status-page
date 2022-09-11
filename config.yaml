@@ -15,6 +15,14 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
+  - id: bcn-plex # unique identifier
+    name: plex-bcn
+    description: 'Plex BCN' # default=empty
+    url: 'http://segator.nodo.ovh:32400/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 401 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=true
   - id: bcn-stats # unique identifier
     name: stats-bcn.neries.li
     description: 'Plex BCN Stats' # default=empty
@@ -23,6 +31,14 @@ monitors:
     expectStatus: 200 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
+  - id: bcn-plex # unique identifier
+    name: plex-mad
+    description: 'Plex MAD' # default=empty
+    url: 'http://jvdivx.synology.me:32400/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 401 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=true
   - id: mad-stats # unique identifier
     name: stats-mad.neries.li
     description: 'Plex MAD Stats' # default=empty
