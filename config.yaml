@@ -16,47 +16,47 @@ settings:
 
 monitors:
   - id: bcn-plex # unique identifier
-    name: plex-bcn
+    name: Plex BCN
     description: 'Plex BCN' # default=empty
     url: 'http://segator.nodo.ovh:32400/' # URL to fetch
     method: GET # default=GET
     expectStatus: 401 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
+    followRedirect: true # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
   - id: bcn-stats # unique identifier
-    name: stats-bcn.neries.li
+    name: Plex BCN Stats
     description: 'Plex BCN Stats' # default=empty
-    url: 'http://stats-bcn.neries.li/' # URL to fetch
+    url: 'https://stats-bcn.neries.li/auth/login' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
-    followRedirect: true # should fetch follow redirects, default=false
+    followRedirect: false # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
   - id: bcn-plex # unique identifier
-    name: plex-mad
+    name: Plex MAD
     description: 'Plex MAD' # default=empty
     url: 'http://jvdivx.synology.me:32400/' # URL to fetch
     method: GET # default=GET
     expectStatus: 401 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
+    followRedirect: true # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
   - id: mad-stats # unique identifier
-    name: stats-mad.neries.li
+    name: Plex Mad Stats
     description: 'Plex MAD Stats' # default=empty
-    url: 'http://stats-mad.neries.li/' # URL to fetch
+    url: 'http://stats-mad.neries.li/auth/login' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
-    followRedirect: true # should fetch follow redirects, default=false
+    followRedirect: false # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
   - id: tv # unique identifier
-    name: tv.neries.li
+    name: TV
     description: 'TV' # default=empty
     url: 'https://tv.neries.li/login' # URL to fetch
     method: GET # default=GET
     expectStatus: 405 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
-    linkable: true # allows the title to be a link, default=true
+    linkable: false # allows the title to be a link, default=true
   - id: requests # unique identifier
-    name: request.neries.li
+    name: Plex Request Content
     description: 'Request Content' # default=empty
     url: 'https://request.neries.li/' # URL to fetch
     method: GET # default=GET
