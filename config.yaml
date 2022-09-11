@@ -21,7 +21,7 @@ monitors:
     url: 'http://stats-bcn.neries.li/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
+    followRedirect: true # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
   - id: mad-stats # unique identifier
     name: stats-mad.neries.li
@@ -29,14 +29,14 @@ monitors:
     url: 'http://stats-mad.neries.li/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
+    followRedirect: true # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
   - id: tv # unique identifier
     name: tv.neries.li
     description: 'TV' # default=empty
-    url: 'http://tv.neries.li/' # URL to fetch
+    url: 'https://tv.neries.li/login' # URL to fetch
     method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
+    expectStatus: 405 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
   - id: requests # unique identifier
@@ -45,6 +45,6 @@ monitors:
     url: 'https://request.neries.li/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
+    followRedirect: true # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
 
