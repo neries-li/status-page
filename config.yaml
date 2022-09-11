@@ -15,25 +15,36 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: workers-cloudflare-com # unique identifier
-    name: workers.cloudflare.com
-    description: 'You write code. They handle the rest.' # default=empty
-    url: 'https://workers.cloudflare.com/' # URL to fetch
+  - id: bcn-stats # unique identifier
+    name: stats-bcn.neries.li
+    description: 'Plex BCN Stats' # default=empty
+    url: 'http://stats-bcn.neries.li/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
-    linkable: false # allows the title to be a link, default=true
-
-  - id: www-cloudflare-com
-    name: www.cloudflare.com
-    description: 'Built for anything connected to the Internet.'
-    url: 'https://www.cloudflare.com'
-    method: GET
-    expectStatus: 200
+    linkable: true # allows the title to be a link, default=true
+  - id: mad-stats # unique identifier
+    name: stats-mad.neries.li
+    description: 'Plex MAD Stats' # default=empty
+    url: 'http://stats-mad.neries.li/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
+  - id: tv # unique identifier
+    name: tv.neries.li
+    description: 'TV' # default=empty
+    url: 'http://tv.neries.li/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
+  - id: requests # unique identifier
+    name: request.neries.li
+    description: 'Request Content' # default=empty
+    url: 'https://request.neries.li/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
 
-  - id: blog-cloudflare-com
-    name: The Cloudflare Blog
-    url: 'https://blog.cloudflare.com/'
-    method: GET
-    expectStatus: 200
