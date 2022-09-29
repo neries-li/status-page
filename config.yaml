@@ -31,7 +31,7 @@ monitors:
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
-  - id: bcn-plex # unique identifier
+  - id: mad-plex # unique identifier
     name: Plex MAD
     description: 'Plex MAD' # default=empty
     url: 'https://plex-mad.neries.li/' # URL to fetch
