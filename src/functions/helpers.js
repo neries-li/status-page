@@ -64,7 +64,7 @@ export async function notifySlack(monitor, operational) {
 }
 
 export async function notifyTelegram(monitor, operational) {
-  const text = `#status Monitor *${monitor.name.replaceAll(
+  const text = `Monitor *${monitor.name.replaceAll(
     '-',
     '\\-',
   )}* changed status to *${getOperationalLabel(operational)}*
@@ -74,6 +74,7 @@ export async function notifyTelegram(monitor, operational) {
 
   const payload = new FormData()
   payload.append('chat_id', SECRET_TELEGRAM_CHAT_ID)
+  payload.append('message_thread_id', 'SECRET_TELEGRAM_THREAD_ID')
   payload.append('parse_mode', 'MarkdownV2')
   payload.append('text', text)
 
